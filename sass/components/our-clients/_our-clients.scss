@@ -1,0 +1,42 @@
+.our-clients {
+  & > .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    fill: $clients-icons-primary-color;
+
+    width: 170px;
+    height: 90px;
+
+    border: 1px solid $clients-border-color;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    @extend %common-transition-settings;
+
+    & :hover,
+    & :focus {
+      // border-color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+  .item {
+    :hover,
+    :focus {
+      border-color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+}

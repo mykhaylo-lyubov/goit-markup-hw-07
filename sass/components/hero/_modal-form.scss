@@ -1,0 +1,178 @@
+.form-title {
+  display: block;
+  margin-bottom: 30px;
+
+  font-family: Roboto;
+  @include font($size: 20px, $height: 1.15);
+  text-align: center;
+
+  color: $primary-title-color;
+}
+
+.form-list {
+  & > .item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+  & .item {
+    height: 40px;
+  }
+}
+
+.form {
+  &-input {
+    width: 448px;
+    height: 40px;
+    padding-left: 42px;
+
+    @extend %modal-input-border;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+      cursor: pointer;
+    }
+  }
+
+  &-textarea {
+    width: 448px;
+    height: 120px;
+    resize: none;
+    padding-left: 16px;
+    padding-top: 12px;
+
+    @extend %modal-input-border;
+  }
+
+  &-field,
+  &-field-textarea {
+    position: relative;
+    display: block;
+  }
+
+  &-field:focus-within .icon {
+    fill: $accent-color;
+  }
+
+  &-field .icon {
+    position: absolute;
+    top: 11px;
+    left: 16px;
+    width: 18px;
+    height: 18px;
+    fill: inherit;
+  }
+
+  &-label {
+    position: absolute;
+    left: 42px;
+    top: 50%;
+    transform: translateY(-50%);
+    @extend %common-transition-transform;
+    @include font($weight: 400, $height: 1.13);
+  }
+
+  &-button-send {
+    margin-top: 30px;
+  }
+}
+
+.form-field:focus-within > .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translate(-70%, -300%);
+
+  @include font(400, 12px, 1.16, 0.01em);
+
+  color: $accent-color;
+}
+
+.form-field-textarea:focus-within > .textarea-label-comment,
+.form-textarea:not(:placeholder-shown) + .textarea-label-comment {
+  transform: translate(0%, -230%);
+
+  @include font(400, 12px, 1.16, 0.01em);
+
+  color: $accent-color;
+}
+
+.textarea-label-comment {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  @extend %common-transition-transform;
+  @include font($weight: 400, $spacing: 0.01em);
+
+  color: $primary-text-color;
+}
+
+.form-agreement {
+  &-text,
+  &-link {
+    margin: 0;
+    padding: 0;
+
+    font-family: Roboto;
+    @include font($weight: 400, $height: 1.71);
+
+    color: $primary-text-color;
+  }
+
+  &-link {
+    color: $accent-color;
+    text-decoration: underline;
+  }
+
+  &-label {
+    display: flex;
+    align-items: center;
+  }
+
+  &-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+    margin-right: 8px;
+
+    transition: transform 250ms linear;
+  }
+
+  &-icon > .form-agreement-svg {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+    transition: transform 250ms linear;
+  }
+
+  &-input:checked + .form-agreement-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    background-color: $accent-color;
+    border-radius: 4px;
+    background-image: url(../images/modal/checkbox-selected.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: $accent-color;
+  }
+}
+
+.form-caption {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+  margin-top: 20px;
+}

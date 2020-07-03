@@ -1,0 +1,20 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 46px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.authors {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 18px;
+  padding-bottom: 21px;
+
+  color: $authors-string-color;
+
+  @include font($size: 12px, $height: 2);
+
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+.logo-link {
+  color: $primary-title-color;
+
+  font-family: raleway, sans-serif;
+  @include font(700, 26px, 1.19);
+
+  text-decoration: none;
+
+  & > span {
+    color: $accent-color;
+  }
+}

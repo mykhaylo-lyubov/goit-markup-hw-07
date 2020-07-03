@@ -1,0 +1,55 @@
+.logo-link-footer {
+  color: $accent-color;
+
+  font-family: raleway, sans-serif;
+  @include font(700, 22px, 1.18);
+
+  text-decoration: none;
+
+  & > span {
+    color: #fff;
+  }
+}
+
+.address,
+.social-links-title {
+  color: $text-on-the-button-color;
+}
+
+.footer {
+  .address {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-style: normal;
+    @include font($height: 1.71);
+  }
+
+  address {
+    margin-top: 10px;
+  }
+
+  &-contacts {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-style: normal;
+    @include font($height: 1.71);
+
+    text-decoration: none;
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 20;
+
+    color: $text-on-the-button-color;
+
+    @include font(700);
+
+    text-transform: uppercase;
+  }
+}
+
+.contacts > .item {
+  margin-top: 9px;
+}

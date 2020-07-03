@@ -1,0 +1,15 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 48px;
+
+  &-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@import "./footer-address";
+@import "./footer-join-us";
+@import "./footer-subscription-form";
+@import "./copyright";

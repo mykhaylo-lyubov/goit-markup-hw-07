@@ -1,0 +1,54 @@
+.heading {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  @include font(700, 36px, 1.17);
+
+  text-align: center;
+}
+
+.our-job {
+  & > .container {
+    width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    border-top: 1px solid #ececec;
+  }
+}
+
+.production {
+  display: flex;
+  justify-content: center;
+
+  & > .item {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+  }
+  & > .item + .item {
+    margin-left: 30px;
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: $text-on-the-button-color;
+
+    @include font;
+
+    text-transform: uppercase;
+  }
+  .title-box {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}

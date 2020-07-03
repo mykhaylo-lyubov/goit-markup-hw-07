@@ -1,0 +1,26 @@
+$accent-color: #2196f3;
+$primary-title-color: #212121;
+$primary-text-color: #757575;
+$text-on-the-button-color: #fff;
+$portfolio-body-nav-button-primary-color: #f5f4fa;
+$authors-string-color: rgba(255, 255, 255, 0.4);
+$clients-border-color: #afb1b8;
+$social-links-primary-bg-color: rgba(255, 255, 255, 0.1);
+$our-features-items-primary-color: #f5f4fa;
+$team-social-links-icon-primary-color: #afb1b8;
+$team-social-links-icon-hover-focus-color: #ffffff;
+$clients-icons-primary-color: #afb1b8;
+
+%common-transition-settings {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%modal-input-border {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+%common-transition-transform {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

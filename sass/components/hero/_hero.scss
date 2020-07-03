@@ -1,0 +1,29 @@
+.hero {
+  text-align: center;
+
+  &-title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: #fff;
+
+    @include font(900, 44px, 1.36, 0.06em);
+
+    text-transform: uppercase;
+  }
+
+  & .around-button-hero {
+    padding-top: 46px;
+  }
+}
+
+@import "./overlay-hero";
+
+.button-hero,
+.form-button-send {
+  @extend %button-hero-and-modal;
+}
+
+@import "./backdrop";
+@import "./modal";
+@import "./modal-form";

@@ -1,0 +1,24 @@
+@import "./utilities/common";
+@import "./utilities/variables";
+@import "./utilities/mixin";
+@import "./components/header/main-header";
+
+main {
+  color: $primary-title-color;
+}
+
+@import "./components/hero/hero";
+
+@import "./utilities/button-hero-and-modal";
+
+@import "./components/our-features/our-features";
+
+@import "./components/our-job/our-job";
+
+@import "./components/team/team";
+
+@import "./components/our-clients/our-clients";
+
+@import "./components/footer/footer";
+
+@import "./components/portfolio/portfolio";

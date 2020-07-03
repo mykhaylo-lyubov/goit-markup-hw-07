@@ -1,0 +1,18 @@
+%button-hero-and-modal {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-color: transparent;
+
+  background-color: $accent-color;
+  color: $text-on-the-button-color;
+  min-width: 200px;
+
+  @include font(700, 16px, 1.88, 0.06em);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  text-decoration: none;
+
+  cursor: pointer;
+}

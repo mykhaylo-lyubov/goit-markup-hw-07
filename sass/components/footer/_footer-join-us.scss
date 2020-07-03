@@ -1,0 +1,30 @@
+.join-us .social-links {
+  display: flex;
+
+  li:not(:last-child) {
+    margin-right: 11px;
+  }
+}
+
+.instagram-icon,
+.twitter-icon,
+.facebook-icon,
+.linkedin-icon {
+  display: inline-flex;
+
+  fill: $text-on-the-button-color;
+  background-color: $social-links-primary-bg-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  @extend %common-transition-settings;
+
+  :hover,
+  :focus {
+    border-radius: 50%;
+    background-color: $accent-color;
+  }
+}
