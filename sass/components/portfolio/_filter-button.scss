@@ -21,8 +21,8 @@
 
     @extend %common-transition-settings;
 
-    :hover,
-    :focus {
+    &:hover,
+    &:focus {
       background-color: $accent-color;
       color: $text-on-the-button-color;
 

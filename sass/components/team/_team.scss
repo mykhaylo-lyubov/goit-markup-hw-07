@@ -67,8 +67,8 @@
 
     @extend %common-transition-settings;
 
-    :hover,
-    :focus {
+    &:hover,
+    &:focus {
       background-color: $accent-color;
       fill: $team-social-links-icon-hover-focus-color;
     }

@@ -697,14 +697,13 @@ main {
   fill: #afb1b8;
 }
 
-.team .instagram-icon :hover,
-.team .instagram-icon :focus,
-.team .twitter-icon :hover,
-.team .twitter-icon :focus,
-.team .facebook-icon :hover,
-.team .facebook-icon :focus,
-.team .linkedin-icon :hover,
-.team .linkedin-icon :focus {
+.team .instagram-icon:hover, .team .instagram-icon:focus,
+.team .twitter-icon:hover,
+.team .twitter-icon:focus,
+.team .facebook-icon:hover,
+.team .facebook-icon:focus,
+.team .linkedin-icon:hover,
+.team .linkedin-icon:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }
@@ -857,16 +856,16 @@ main {
   cursor: pointer;
 }
 
-.instagram-icon :hover,
-.instagram-icon :focus,
-.twitter-icon :hover,
-.twitter-icon :focus,
-.facebook-icon :hover,
-.facebook-icon :focus,
-.linkedin-icon :hover,
-.linkedin-icon :focus {
+.instagram-icon:hover, .instagram-icon:focus,
+.twitter-icon:hover,
+.twitter-icon:focus,
+.facebook-icon:hover,
+.facebook-icon:focus,
+.linkedin-icon:hover,
+.linkedin-icon:focus {
   border-radius: 50%;
   background-color: #2196f3;
+  fill: #ffffff;
 }
 
 .footer-form {
@@ -1006,8 +1005,7 @@ main {
   cursor: pointer;
 }
 
-.portfolio .button-portfolio :hover,
-.portfolio .button-portfolio :focus {
+.portfolio .button-portfolio:hover, .portfolio .button-portfolio:focus {
   background-color: #2196f3;
   color: #fff;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);

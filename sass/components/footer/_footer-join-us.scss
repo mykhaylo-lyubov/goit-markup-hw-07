@@ -22,9 +22,10 @@
 
   @extend %common-transition-settings;
 
-  :hover,
-  :focus {
+  &:hover,
+  &:focus {
     border-radius: 50%;
     background-color: $accent-color;
+    fill: #ffffff;
   }
 }
